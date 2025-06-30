@@ -11,7 +11,7 @@ export default function Home() {
     setLoading(true);
     try {
       const res = await fetch(
-        'https://8d9a775a-f34b-41a1-ba9c-489ed7572a9a-00-2sflx9bzohygr.sisko.replit.dev/search',
+        'https://101086ae-eaa3-4ccc-be46-aa908cc4ce38-00-1ezp8frwpgn0j.pike.replit.dev/search',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -46,9 +46,9 @@ export default function Home() {
         {loading ? 'Mencari...' : 'Cari Resep'}
       </button>
 
-      {result && result.title && (
+      {result && result.titlerowrow && (
         <div className="mt-6 max-w-xl shadow rounded p-4 w-full text-left">
-          <h2 className="text-xl font-semibold">{result.title}</h2>
+          <h2 className="text-xl font-semibold">{result.titlerowrow}</h2>
           <p className="mt-2"><strong>Bahan:</strong> {result.ingredients}</p>
           <p className="mt-2"><strong>Langkah:</strong> {result.steps}</p>
           <p className="mt-2 text-sm text-gray-500">❤️ {result.love} suka</p>
