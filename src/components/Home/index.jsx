@@ -11,7 +11,7 @@ export default function Home() {
     setLoading(true);
     try {
       const res = await fetch(
-        'https://8d9a775a-f34b-41a1-ba9c-489ed7572a9a-00-2sflx9bzohygr.sisko.replit.dev/search',
+        'https://101086ae-eaa3-4ccc-be46-aa908cc4ce38-00-1ezp8frwpgn0j.pike.replit.dev/search',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
