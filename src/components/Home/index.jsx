@@ -11,7 +11,7 @@ export default function Home() {
     setLoading(true);
     try {
       const res = await fetch(
-        'https://101086ae-eaa3-4ccc-be46-aa908cc4ce38-00-1ezp8frwpgn0j.pike.replit.dev/search',
+        'https://web-production-73bba2.up.railway.app/search',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
